@@ -6,9 +6,9 @@ library(NoiseFiltersR)
 library("cowplot")
 library("arulesViz")
 library("C50")
-library("C50")
 library("caret")
 
+set.seed(4)
 # Se carga la cabecera de la base de datos.
 head <- c("animal name","hair",
           "feathers","eggs","milk","airborne","aquatic","predator",
