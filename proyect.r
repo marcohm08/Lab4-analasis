@@ -49,17 +49,17 @@ data.wide <- data[,-1]
 
 # Para hacer un resumen de las variables adecuado se transforman las columnas con valores 1 y 0 a booleanos
 
-#data.wide[["hair"]] <- as.logical(data.wide[["hair"]])
-#data.wide[["feathers"]] <- as.logical(data.wide[["feathers"]])
-#data.wide[["eggs"]] <- as.logical(data.wide[["eggs"]])
-#data.wide[["milk"]] <- as.logical(data.wide[["milk"]])
-#data.wide[["airborne"]] <- as.logical(data.wide[["airborne"]])
-#data.wide[["toothed"]] <- as.logical(data.wide[["toothed"]])
-#data.wide[["backbone"]] <- as.logical(data.wide[["backbone"]])
-#data.wide[["breathes"]] <- as.logical(data.wide[["breathes"]])
-#data.wide[["fins"]] <- as.logical(data.wide[["fins"]])
-#data.wide[["tail"]] <- as.logical(data.wide[["tail"]])
-#data.wide[["legs"]] <- factor(data.wide[["legs"]])
+data.wide[["hair"]] <- factor(data.wide[["hair"]])
+data.wide[["feathers"]] <- factor(data.wide[["feathers"]])
+data.wide[["eggs"]] <- factor(data.wide[["eggs"]])
+data.wide[["milk"]] <- factor(data.wide[["milk"]])
+data.wide[["airborne"]] <- factor(data.wide[["airborne"]])
+data.wide[["toothed"]] <- factor(data.wide[["toothed"]])
+data.wide[["backbone"]] <- factor(data.wide[["backbone"]])
+data.wide[["breathes"]] <- factor(data.wide[["breathes"]])
+data.wide[["fins"]] <- factor(data.wide[["fins"]])
+data.wide[["tail"]] <- factor(data.wide[["tail"]])
+data.wide[["legs"]] <- factor(data.wide[["legs"]])
 
 summary(data.wide)
 
